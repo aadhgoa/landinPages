@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://fonts.googleapis.com/css?family=Poppins:200i,300,400,500,600,700,800,900&display=swap"
+        rel="stylesheet" />
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <header id="header">
+        <a href="#" class="logo">Eid-al-Fitr</a>
+        <div class="toggle"></div>
+        <ul class="navigation">
+            <li class="nav_list">
+                <a href="#" class="nav_items active">Home</a>
+            </li>
+            <li class="nav_list">
+                <a href="#wishes" class="nav_items">Wishes</a>
+            </li>
+            <li class="nav_list">
+                <a href="#" class="nav_items">About</a>
+            </li>
+            <li class="nav_list">
+                <a href="#" class="nav_items">Schedule</a>
+            </li>
+        </ul>
+    </header>
+
+    <section>
+        <img src="./img/stars.png" alt="stars" id="stars">
+        <img src="./img/stars2.png" alt="stars" id="stars2">
+        <img src="./img/moon.png" alt="moon" id="moon">
+        <h2 id="text">
+            Eid Mubarak
+        </h2>
+        <img src="./img/rock.png" alt="rock" id="rock">
+        <img src="./img/masjid.png" alt="masjid" id="masjid">
+        <img src="./img/bottom.png" alt="bottom" id="bottom">
+        <img src="./img/lamp.png" alt="lamp" id="lamp">
+    </section>
+
+    <section id="wishes">
+        <article class="text">
+            <h2>
+                Happy Eid Mubarak to you and your family.
+            </h2>
+            <p>
+                My good wishes, my good wishes for you are the just prayers for your long happy life from God on this noble event. Wish you a very Happy Eid Mubarak!
+            </p>
+        </article>
+    </section>
+    
+
+    <section id="about">
+        <article class="text">
+            <h2>About Eid-al-Fitr</h2>
+            <p>
+                Eid-al-Fitr (also written and pronounced as Eid-ul-Fitr) is the first of two Eids of the Islamic (lunar) calendar year. It rounds off the month of Ramadan, which Muslims observe every year to acknowledge Allah’s revelation of the Quran to the Prophet Muhammad.
+            </p>
+            <p>
+                Not to be confused with Eid-al-Adha, this Eid comes after the holy month of Ramadan, when many Muslims will not eat or drink during the daytime for a 29- or 30-day period. It’s part of Sawm (fasting) commitment, one of the five pillars of Islam.
+            </p>
+
+            <p>
+                The holiday is all about the breaking of the dawn-to-dusk fast and is celebrated on the first day of Shawwal (the 10th month). It falls approximately 11 days earlier than the one the previous year when following the Gregorian (solar) calendar.
+            </p>
+        </article>
+    </section>
+
+
+    <footer id="schdeule">
+        <p class="text">
+            Eid-al-Fitr (Eid al-Fitr, Eid ul-Fitr, Id-Ul-Fitr, Eid) is the first day of the Islamic month of Shawwal. It marks the end of Ramadan, which is a month of fasting and prayer.
+        </p>
+    </footer>
+
+
+    <script>
+
+
+        let stars = document.getElementById('stars');
+        let stars2 = document.getElementById('stars2');
+        let moon = document.getElementById('moon');
+        let rock = document.getElementById('rock');
+        let masjid = document.getElementById('masjid');
+        let text = document.getElementById('text');
+        let header = document.getElementById('header');
+
+
+        window.addEventListener('scroll', function(){
+            let value = window.scrollY;
+            stars.style.bottom = value * 0.05 + '%';
+            moon.style.bottom = value * -0.5 + 'px';
+            rock.style.bottom = value * -0.75 + 'px';
+            masjid.style.bottom = value * -0.5 + 'px';
+
+            text.style.right = -100 + value * 0.5 + '%';
+            text.style.top = 50 + value * 0.1 + '%';
+
+        })
+
+        const toggleMenu = document.querySelector('.toggle');
+        const navigation = document.querySelector('.navigation');
+        toggleMenu.onclick = function(){
+            toggleMenu.classList.toggle('active');
+            navigation.classList.toggle('active');
+        }
+
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>
+        Home | Starbucks
+    </title>
+    
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;1,100;1,200;1,300;1,400;1,500&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <section>
+        <div class="circle"></div>
+        <header>
+            <a href="#">
+                <img src="./images/Starbucks_logo.png" alt="logo-starbucks" width="100px" class="logo">
+            </a>
+
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Menu</a></li>
+                <li><a href="#">Whats New</a></li>
+                <li><a href="#">Contacts</a></li>
+            </ul>
+        </header>
+
+
+        <div class="content">
+            <div class="textBox">
+                <h2>
+                    It's not just Coffee
+                    <br>
+                    It's <span>
+                        Starbucks
+                    </span>
+                </h2>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure ducimus totam nam sint, dolores
+                    reprehenderit sequi, illum quos odio qui, sed asperiores ab voluptatum animi!
+                </p>
+                <a href="#">Learn More</a>
+            </div>
+
+            <div class="imgBox">
+                <img src="./images/77325-frappuccino-drink-chocolate-starbucks-matcha-white.png" alt=""
+                    id="starbucks" style="max-width: 340px;">
+            </div>
+        </div>
+        <ul class="thumb">
+            <li>
+                <img src="./images/62120-coffee-frappuccino-drink-latte-starbucks-unicorn.png" alt=""height="120" onclick="imgSlider('./images/img3.png')">
+                
+                
+            </li>
+            <li>
+                <img src="./images/62115-tea-coffee-drink-starbucks-latte-free-download-image (1).png" alt=""height="120" onclick="imgSlider('./images/img2.png')">
+            </li>
+            <li>
+                <img src="./images/77325-frappuccino-drink-chocolate-starbucks-matcha-white.png" alt=""height="120" onclick="imgSlider('./images/77325-frappuccino-drink-chocolate-starbucks-matcha-white.png')">
+            </li>
+        </ul>
+
+
+
+        <ul class="sci">
+            <li>
+                <a href="#">
+                    <img src="https://aadhgoa.github.io/hostassitant/Instagram%20Icon.png" alt="" >
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <img src="https://aadhgoa.github.io/hostassitant/Twitter.png" alt="">
+                </a>
+            </li>
+        </ul>
+    </section>
+
+    <script>
+        function imgSlider(anything){
+            document.getElementById('starbucks').src = anything;
+            document.getElementById('starbucks').style.maxWidth='340px';
+        }
+    </script>
+</body>
+
+</html>
