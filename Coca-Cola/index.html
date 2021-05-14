@@ -21,6 +21,7 @@
             <a href="#">
                 <img src="./images/logo.png" class="logo" alt="">
             </a>
+            <div class="toggle" onclick="toggleMenu()"></div>
             <ul class="navbar">
                 <li>
                     <a href="#">
@@ -112,6 +113,18 @@
 
     <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
     <script>
+
+
+        function toggleMenu() {
+            const menuToggle = document.querySelector('.toggle');
+            const navigation= document.querySelector('.navbar');
+            menuToggle.classList.toggle('active');
+            navigation.classList.toggle('active');
+        }
+
+        
+
+
         var swiper = new Swiper(".mySwiper", {
           effect: "coverflow",
           grabCursor: true,
